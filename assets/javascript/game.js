@@ -23,7 +23,9 @@ $(".baylor-logo").on("click", function(){
 $(".notredame-logo").on("click", function(){
 
 
-    //Same functionality as determining the Baylor value, except that I am determining the Notre Dame value.
+    //Same functionality as determining the Baylor value, except that I am determining the value when the 
+    //Notre Dame button is clicked. 
+
     //The attribute is "irish-value"
     var newIrish = ($(this).attr("irish-value"));
     newIrish = parseInt(newIrish);
@@ -33,6 +35,10 @@ $(".notredame-logo").on("click", function(){
 });
 
 $(".oregon-logo").on("click", function(){
+    //Same functionality as determining the Baylor value, except that I am determining the value when the 
+    //Oregon button is clicked.
+
+    //The attribute is "duck-value"
     score = score + 5;
     scoreCounter.textContent = "Your score is: " + score;
 });

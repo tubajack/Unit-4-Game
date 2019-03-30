@@ -10,18 +10,23 @@ var targetScore = 100;
 //click an event which responds to the clicking of the logos
 $(".baylor-logo").on("click", function(){
 
+    // Determining the Baylor value requires us to extract the value from the data attribute.
+    // Using the $(this) keyword specifies that we should be extracting the value when the Baylor logo is clicked.
+    // Using the .attr("data-crystalvalue") allows us to grab the value out of the "baylor-crystalvalue" attribute.
+    // Since attributes on HTML elements are strings, we must convert it to an integer before adding to the counter
     var newBaylor = ($(this).attr("baylor-value"));
     newBaylor = parseInt(newBaylor);
-
-    score = score + 3;
-    
+    score = score + 3;  
     $("#score-counter").text(score);
-    //scoreCounter.textContent = "Your score is: " + score;
 });
 
 $(".notredame-logo").on("click", function(){
+
+    var newIrish = ($(this).attr("irish-value"));
+    newIrish = parseInt(newIrish);
     score = score + 2;
-    scoreCounter.textContent = "Your score is: " + score;
+    $("#score-counter").text(score);
+    
 });
 
 $(".oregon-logo").on("click", function(){

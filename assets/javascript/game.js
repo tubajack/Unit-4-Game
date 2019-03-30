@@ -4,7 +4,7 @@ var score = 0;
 
 //click an event which responds to the clicking of the logos
 $(".baylor-logo").on("click", function(){
-    score = score + 2;
+    score = score + 3;
     scoreCounter.textContent = "Your score is: " + score;
 
     //Alert the user they clicked the Baylor logo
@@ -12,13 +12,16 @@ $(".baylor-logo").on("click", function(){
 });
 
 $(".notredame-logo").on("click", function(){
-    
+    score = score + 2;
+    scoreCounter.textContent = "Your score is: " + score;
 
     //Alert the user they clicked the Baylor logo
     alert("You clicked the Notre Dame logo. Go Irish");
 });
 
 $(".oregon-logo").on("click", function(){
+    score = score + 2;
+    scoreCounter.textContent = "Your score is: " + score;
 
     //Alert the user they clicked the Baylor logo
     alert("You clicked the Oregon logo. Go Ducks");

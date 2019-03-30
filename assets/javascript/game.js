@@ -13,7 +13,9 @@ $(".baylor-logo").on("click", function(){
     var newBaylor = ($(this).attr("baylor-value"));
     newBaylor = parseInt(newBaylor);
 
-    score += newBaylor;
+    score = score + 3;
+    
+    $("#score-counter").text(score);
     //scoreCounter.textContent = "Your score is: " + score;
 });
 

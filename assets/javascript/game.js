@@ -22,6 +22,9 @@ $(".baylor-logo").on("click", function(){
 
 $(".notredame-logo").on("click", function(){
 
+
+    //Same functionality as determining the Baylor value, except that I am determining the Notre Dame value.
+    //The attribute is "irish-value"
     var newIrish = ($(this).attr("irish-value"));
     newIrish = parseInt(newIrish);
     score = score + 2;

@@ -20,7 +20,7 @@ $(".notredame-logo").on("click", function(){
 });
 
 $(".oregon-logo").on("click", function(){
-    score = score + 2;
+    score = score + 5;
     scoreCounter.textContent = "Your score is: " + score;
 
     //Alert the user they clicked the Baylor logo
@@ -28,6 +28,8 @@ $(".oregon-logo").on("click", function(){
 });
 
 $(".uconn-logo").on("click", function(){
+    score = score + 10;
+    scoreCounter.textContent = "Your score is: " + score;
 
     //Alert the user they clicked the Baylor logo
     alert("You clicked the UConn logo. Go Huskies");

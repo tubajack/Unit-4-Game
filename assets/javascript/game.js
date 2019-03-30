@@ -81,12 +81,30 @@ var result = function(result){
     if(score === targetScore){
         wins++;
         $("#wins").text(wins);
+        reset();
     }
     else if(score > targetScore){
         losses++;
         $("#losses").text(losses);
+        reset();
     }
+    
 }
+
+//Create a restart function
+function reset(){
+    score = 0;
+    targetScore = 125;
+    $("#score-counter").text(score);
+    $("#target-score").text(targetScore);
+}
+
+
+
+
+
+
+
 
 
 

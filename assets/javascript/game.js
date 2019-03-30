@@ -1,4 +1,4 @@
-alert("This is the start of the crystal game.");
+
 
 //click an event which responds to the clicking of the logos
 $(".baylor-logo").on("click", function(){

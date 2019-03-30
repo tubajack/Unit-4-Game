@@ -35,7 +35,7 @@ $(".notredame-logo").on("click", function(){
 });
 
 $(".oregon-logo").on("click", function(){
-    //Same functionality as determining the Baylor value, except that I am determining the value when the 
+    //Same functionality as determining the above values, except that I am determining the value when the 
     //Oregon button is clicked.
 
     //The attribute is "duck-value"
@@ -46,8 +46,14 @@ $(".oregon-logo").on("click", function(){
 });
 
 $(".uconn-logo").on("click", function(){
+    //Same functionality as determining the above values, except that I am determining the value when the 
+    //UCONN button is clicked.
+
+    //The attribute is "husky-value"
+    var newHusky = ($(this).attr("husky-value"));
+    newHusky = parseInt(newHusky);
     score = score + 10;
-    scoreCounter.textContent = "Your score is: " + score;
+    $("#score-counter").text(score);
 });
 
 //Create a variable for holding a reference for the score counter

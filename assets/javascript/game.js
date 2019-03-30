@@ -39,8 +39,10 @@ $(".oregon-logo").on("click", function(){
     //Oregon button is clicked.
 
     //The attribute is "duck-value"
+    var newDucks = ($(this).attr("duck-value"));
+    newDucks = parseInt(newDucks);
     score = score + 5;
-    scoreCounter.textContent = "Your score is: " + score;
+    $("#score-counter").text(score);
 });
 
 $(".uconn-logo").on("click", function(){

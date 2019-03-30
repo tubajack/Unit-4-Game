@@ -28,7 +28,7 @@ $(".uconn-logo").on("click", function(){
 });
 
 //Create a variable for holding a reference for the score counter
-var scoreCounter = doucment.getElementByID("score-counter");
+var scoreCounter = document.getElementById("score-counter")
 
 //Have that score be displayed to the screen
-scoreCounter.textContent = score;
+scoreCounter.textContent = "Your score is: " + score;

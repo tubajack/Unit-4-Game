@@ -4,8 +4,15 @@ var score = 0;
 //Declare a target score
 var targetScore = 100; 
 
+//Initialize the wins and losses variables
+var wins = 0;
+var losses = 0;
 
-
+//Create a variable for holding a reference for the score counter
+$("#score-counter").text(score);
+$("#target-score").text(targetScore);
+$("#wins").text(wins);
+$("#losses").text(losses);
 
 //click an event which responds to the clicking of the logos
 $(".baylor-logo").on("click", function(){
@@ -56,7 +63,5 @@ $(".uconn-logo").on("click", function(){
     $("#score-counter").text(score);
 });
 
-//Create a variable for holding a reference for the score counter
-$("#score-counter").text(score);
-$("#target-score").text(targetScore);
+
 

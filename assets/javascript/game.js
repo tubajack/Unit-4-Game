@@ -9,8 +9,12 @@ var targetScore = 100;
 
 //click an event which responds to the clicking of the logos
 $(".baylor-logo").on("click", function(){
-    score = score + 3;
-    scoreCounter.textContent = "Your score is: " + score;
+
+    var newBaylor = ($(this).attr("baylor-value"));
+    newBaylor = parseInt(newBaylor);
+
+    score += newBaylor;
+    //scoreCounter.textContent = "Your score is: " + score;
 });
 
 $(".notredame-logo").on("click", function(){
@@ -32,8 +36,3 @@ $(".uconn-logo").on("click", function(){
 $("#score-counter").text(score);
 $("#target-score").text(targetScore);
 
-
-
-//Have that score be displayed to the screen
-scoreCounter.textContent = "Your score is: " + score;
-targetScore.textContent = "Target Score: " + targetScore;

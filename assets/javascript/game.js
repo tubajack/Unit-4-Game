@@ -5,6 +5,8 @@ var score = 0;
 var targetScore = 100; 
 
 
+
+
 //click an event which responds to the clicking of the logos
 $(".baylor-logo").on("click", function(){
     score = score + 3;
@@ -27,8 +29,10 @@ $(".uconn-logo").on("click", function(){
 });
 
 //Create a variable for holding a reference for the score counter
-var scoreCounter = document.getElementById("score-counter")
-var targetScore = document.getElementById("target-score");
+$("#score-counter").text(score);
+$("#target-score").text(targetScore);
+
+
 
 //Have that score be displayed to the screen
 scoreCounter.textContent = "Your score is: " + score;

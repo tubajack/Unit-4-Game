@@ -14,6 +14,9 @@ $("#target-score").text(targetScore);
 $("#wins").text(wins);
 $("#losses").text(losses);
 
+
+
+
 //click an event which responds to the clicking of the logos
 $(".baylor-logo").on("click", function(){
 
@@ -25,6 +28,9 @@ $(".baylor-logo").on("click", function(){
     newBaylor = parseInt(newBaylor);
     score = score + 3;  
     $("#score-counter").text(score);
+
+    result();
+
 });
 
 $(".notredame-logo").on("click", function(){
@@ -38,7 +44,9 @@ $(".notredame-logo").on("click", function(){
     newIrish = parseInt(newIrish);
     score = score + 2;
     $("#score-counter").text(score);
-    
+
+    result();
+
 });
 
 $(".oregon-logo").on("click", function(){
@@ -50,6 +58,9 @@ $(".oregon-logo").on("click", function(){
     newDucks = parseInt(newDucks);
     score = score + 5;
     $("#score-counter").text(score);
+
+    result();
+
 });
 
 $(".uconn-logo").on("click", function(){
@@ -61,7 +72,23 @@ $(".uconn-logo").on("click", function(){
     newHusky = parseInt(newHusky);
     score = score + 10;
     $("#score-counter").text(score);
+
+    result();
+  
 });
+
+var result = function(result){
+    if(score === targetScore){
+        wins++;
+        $("#wins").text(wins);
+    }
+    else if(score > targetScore){
+        losses++;
+        $("#losses").text(losses);
+    }
+}
+
+
 
 
 

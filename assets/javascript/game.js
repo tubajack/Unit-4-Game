@@ -26,7 +26,7 @@ $(".baylor-logo").on("click", function(){
     // Since attributes on HTML elements are strings, we must convert it to an integer before adding to the counter
     var newBaylor = ($(this).attr("baylor-value"));
     newBaylor = parseInt(newBaylor);
-    score = score + 3;  
+    score = score + Math.floor(Math.random() * (12) + 1); 
     $("#score-counter").text(score);
 
     result();

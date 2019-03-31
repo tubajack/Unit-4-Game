@@ -26,7 +26,7 @@ $(".baylor-logo").on("click", function(){
     // Since attributes on HTML elements are strings, we must convert it to an integer before adding to the counter
     var newBaylor = ($(this).attr("baylor-value"));
     newBaylor = parseInt(newBaylor);
-    score = score + 3;  
+    score = score + Math.floor(Math.random() * (12) + 1); 
     $("#score-counter").text(score);
 
     result();
@@ -42,7 +42,7 @@ $(".notredame-logo").on("click", function(){
     //The attribute is "irish-value"
     var newIrish = ($(this).attr("irish-value"));
     newIrish = parseInt(newIrish);
-    score = score + 2;
+    score = score + Math.floor(Math.random() * (12) + 1);
     $("#score-counter").text(score);
 
     result();
@@ -56,7 +56,7 @@ $(".oregon-logo").on("click", function(){
     //The attribute is "duck-value"
     var newDucks = ($(this).attr("duck-value"));
     newDucks = parseInt(newDucks);
-    score = score + 5;
+    score = score + Math.floor(Math.random() * (12) + 1);
     $("#score-counter").text(score);
 
     result();
@@ -70,7 +70,7 @@ $(".uconn-logo").on("click", function(){
     //The attribute is "husky-value"
     var newHusky = ($(this).attr("husky-value"));
     newHusky = parseInt(newHusky);
-    score = score + 10;
+    score = score + Math.floor(Math.random() * (12) + 1);
     $("#score-counter").text(score);
 
     result();

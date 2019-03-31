@@ -2,7 +2,7 @@
 var score = 0;
 
 //Declare a target score
-var targetScore = 100; 
+var targetScore = Math.floor(Math.random() * (102) + 19);
 
 //Initialize the wins and losses variables
 var wins = 0;
@@ -94,7 +94,7 @@ var result = function(result){
 //Create a restart function
 function reset(){
     score = 0;
-    targetScore = 125;
+    targetScore = Math.floor(Math.random() * (102) + 19);
     $("#score-counter").text(score);
     $("#target-score").text(targetScore);
 }
